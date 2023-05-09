@@ -1,0 +1,339 @@
+---
+title: "CV Georg Haehn"
+author: Georg Haehn
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    #self_contained: TRUE
+# uncomment this line to produce HTML and PDF in RStudio:
+knit: pagedown::chrome_print
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# Aside
+
+![Georg Hähn](https://avatars.githubusercontent.com/u/93133085?v=4){width=100%}
+
+<!-- Personal Info {#contact} -->
+
+<!-- -------------------------------------------------------------------------------- -->
+
+<big> **Personal Information** </big>
+
+<small> 
+<i class="fas fa-birthday-cake"></i> 21.04.1998, Leipzig,
+Germany <br>
+<i class="fa fa-envelope"></i>
+[georg.haehn\@idiv.de](mailto:georg.haehn@idiv.de){.email}
+<br> <i class="fa fa-github"></i>
+[github.com/georghaehn](https://github.com/georghaehn) <br>
+<i class="fa fa-twitter"></i>
+[twitter.com/georghaehn](https://twitter.com/georghaehn) <br>
+
+<!-- Skills {#skills} -->
+
+<!-- -------------------------------------------------------------------------------- -->
+
+<big> **Skills** </big>
+
+**Fieldwork**
+
+<small> experience in experiment development <br> extensive sampling
+experience (arthropods, leaves & leaf-litter, soil) <br> </small>
+
+**Labwork**
+
+<small> chemical leaf trait analyses <br> soil respiration <br> </small>
+
+**Computational**
+
+<small> R for data management & statistical analyses (advanced)<br>
+$\LaTeX$ (intermediate)<br> Git (intermediate)<br> Unix (basic)<br> MS
+Office (advanced)<br> </small>
+
+**Language**
+
+<small> German (native) <br> English (fluent, TOEFL 12.2022) <br> Latin
+(basic knowledge) <br> </small>
+
+**Driver\`s licence**
+
+<small> Car<br> Motorcycle<br> Tractor (up to 40$\frac{km}{h}$)<br>
+</small>
+
+## Disclaimer {#disclaimer}
+
+<!-- This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown). -->
+
+<!-- Last updated on `r Sys.Date()`. -->
+
+# Main
+
+## Georg J. A. Hähn {#title}
+
+### Biologist (M.Sc.)
+
+<!-- My main interests are species composition in plant communities -->
+
+<!-- and ecosystem functioning related to niche space.<br> -->
+
+<!-- Currently I am working with a global vegetation database to show -->
+
+<!-- patterns of plant species assemblage based on their phylogenetic and -->
+
+<!-- functional diversity. <br> -->
+
+## Education {data-icon="graduation-cap" data-concise="true"}
+
+### Martin Luther University Halle-Wittenberg
+
+Master of Science: Biology (ECTS: A, CGPA: 3.9)
+
+N/A
+
+2022-09 - 2020-10
+
+Courses: <br> - Spatial Ecology and Modeling <br> - Nature Conservation
+<br> - Field Ecology <br>
+
+Internships (6 weeks): <br> - Specimen and Phylogeny research of the
+genus *Melica* <br> - Modeling approaches on temperature buffering in
+subtropical forests <br>
+
+Thesis: Comparison of the global distribution of functional and
+phylogenetic diversity in plant communities. Supervision by Prof. Helge
+Bruelheide and Prof. Francesco Sabatini at
+[iDiv](https://www.idiv.de/en/index.html).
+
+### Martin Luther University Halle-Wittenberg
+
+Bachelor of Science: Biology (ECTS: C, CGPA: 2.6)
+
+N/A
+
+2020-10 - 2016-10
+
+Thesis: Litter quality and tree species richness effects on litter
+decomposition in subtropical forest. Supervision by Prof. Nico
+Eisenhauer and Dr. Remy Beugnon at
+[iDiv](https://www.idiv.de/en/index.html).
+
+### Gymnasium Brandis
+
+Abitur (general qualification for university entrance)
+
+N/A
+
+2016-06 - 2008-08
+
+## Work Experience {data-icon="laptop"}
+
+### Research Assistant (80h/month)
+
+Martin Luther University Halle-Wittenberg
+
+Halle (Saale)
+
+Current - 2022-10
+
+-   Database curator of [sPlot](https://www.idiv.de/en/splot.html)
+-   Recruiting and preparation of new datasets for the database
+-   Classification of vegetation types
+
+### Research Assistant (60h/month)
+
+Martin Luther University Halle-Wittenberg
+
+Halle (Saale)
+
+2022-09 - 2022-03
+
+-   Database curator of [sPlot](https://www.idiv.de/en/splot.html)
+-   Recruiting and preparation of new datasets for the database
+
+### Student Research Assistant (50h/month)
+
+Leipzig University ([iDiv](https://www.idiv.de/en/index.html))
+
+Leipzig
+
+2022-01 - 2021-07
+
+-   Lab and field assistant
+-   Preparation of bait-lamina-strips for [The Jena
+    Experiment](http://the-jena-experiment.de/)
+
+### Research Assistant (53h/month)
+
+Martin Luther University Halle-Wittenberg
+
+Halle (Saale)
+
+2021-06 - 2020-10
+
+-   Database curator of [sPlot](https://www.idiv.de/en/splot.html)
+-   Digitalization of vegetation relevees
+
+### Student Research Assistant (80h/month)
+
+Leipzig University
+
+Xingangshan, China
+
+2019-12 - 2019-09
+
+-   Field and lab assistant
+-   Leaf litter decomposition experiment in a subtropical forest
+    plantation [BEF China](https://bef-china.com/)
+
+### Research Assistant (40h/month)
+
+Martin Luther University Halle-Wittenberg
+
+Xingangshan, China
+
+2019-06 - 2018-08
+
+-   Field assistant with three field trips of two months
+-   Terrestrial laserscanning to calculate tree-crown-interaction
+-   Preparing of a leaf litter decomposition experiment
+-   Insect collection and leaf-insect-damage categorization
+
+<!-- <br> -->
+
+<!-- <br> -->
+
+<!-- <br> -->
+
+<!-- <br> -->
+
+<!-- <br> -->
+
+<!-- <br> -->
+
+<!-- Professional Experience {data-icon=suitcase} -->
+
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ###  -->
+
+<!-- company -->
+
+<!-- location -->
+
+<!-- year -->
+
+<!-- ::: concise -->
+
+<!-- ::: -->
+
+## Teaching Experience {data-icon="chalkboard-teacher"}
+
+### Introduction to R and RMarkdown
+
+One full day course: introduction to $dplyr$, $ggplot$ & $\LaTeX$.
+
+N/A
+
+2021
+
+### Introduction to R
+
+One full day course: introduction to $tidyverse$ and the native pipe
+operator.
+
+N/A
+
+2023
+
+### Creating website and CV from R
+
+In this two days course, I teach the basics how to create a
+website and a CV using RStudio IDE. Introducing the programming backbone 
+including basics of $html$ and $LaTeX$ coding.
+
+N/A
+
+2023
+
+## Scientific references {data-icon="fa-solid fa-user-tie"}
+
+### Prof. Helge Bruelheide
+
+Supervisor: Master thesis & current employment <br>
+Martin Luther University Halle-Wittenberg <br>
+<i class="fa fa-envelope"></i>
+[helge.bruelheide\@botanik.uni-halle.de](mailto:helge.bruelheide@botanik.uni-halle.de){.email}
+<br> <i class="fa fa-phone"></i> +49 345 5526222
+
+N/A
+
+N/A
+
+### Prof. Francesco Maria Sabatini
+
+Supervisor: Master thesis & former employment <br> Università Di Bologna
+<br> <i class="fa fa-envelope"></i>
+[francescomaria.sabatini\@unibo.it](mailto:francescomaria.sabatini@unibo.it){.email}
+
+N/A
+
+N/A
+
+### Dr. Remy Beugnon
+
+Supervisor: Bachelor thesis & former employment <br> German Centre for
+Integrative Biodiversity Research (iDiv) <br>
+<i class="fa fa-envelope"></i>
+[remy.beugnon\@idiv.de](mailto:remy.beugnon@idiv.de){.email}
+
+N/A
+
+N/A
+
+## Publications {data-icon="file"}
+
+### 
+
+Rémy Beugnon, Nico Eisenhauer, Helge Bruelheide, Andréa Davrinche,
+Jianqing Du, Sylvia Haider, Georg Hähn, Mariem Saadani, Bala
+Singavarapu, Marie Sünnemann, Lise Thouvenot, Tesfaye Wubet, Kai Xue &
+Simone Cesarz. Tree diversity effects on litter decomposition are
+mediated by litterfall and microbial processes. (*Accepted at OIKOS*)
+
+N/A
+
+N/A
+
+### 
+
+Francesco M. Sabatini, Georg Hähn, Karina Speziale, Ana María Cingolani,
+Gabriella Damasceno & Helge Bruelheide. Vegetation of Southern Patagonia
+in the 70s - Digitalization of a gray literature dataset as a monitoring
+baseline in a chnaging world. (*submitted*)
+
+N/A
+
+N/A
+
+### 
+
+Florian Schnabel, Rémy Beugnon, Yang Bo, Simone Cesarz, Nico Eisenhauer,
+Maria Dolores Perles Garcia, Georg Hähn, Werner Härdtle, Yuanyuan Huang,
+Matthias Kunz, Xiaojuan Liu, Nadia Cristina Castro Izaguirre, Pascal A.
+Niklaus, Goddert von Oheimb, Ronny Richter, Bernhard Schmid, Stefan
+Trogisch, Christian Wirth, Keping Ma & Helge Bruelheide. Tree diversity
+increases forest temperature buffering. (*in preparation*)
+
+N/A
+
+N/A
+
+### 
+
+Georg Hähn, Francesco M. Sabatini, Gabriella Damasceno, ... & Helge
+Bruelheide. The distribution patterns of functional and phylogenetic
+diversity in vascular plant communities. (*in preparation*)

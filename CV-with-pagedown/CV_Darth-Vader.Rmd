@@ -1,0 +1,216 @@
+---
+title: "CV Darth Vader"
+author: Darth Vader
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: false
+# uncomment this line to produce HTML and PDF in RStudio:
+knit: pagedown::chrome_print
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+Aside
+================================================================================
+
+
+![Darth Vader](https://images2.alphacoders.com/591/thumbbig-59190.webp){width=100%}
+
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+<i class="fas fa-birthday-cake"></i> 41.9 BBY, Tatooine,
+Outer Rims <br>
+<i class="fas fa-home"></i> Death Star II <br>
+<i class="fa fa-envelope"></i>
+[darth.vader@galactic-empire.ds](mailto:darth.vader@galactic-empire.ds){.email}
+<br> 
+<i class="fa fa-twitter"></i> darthvader <br>
+
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+- Tutaminis <br>
+<small>power to absorb any kind of energy</small>
+
+- Force Destruction & Rage <br>
+<small>channel energy and anger in a blast</small>
+
+- Force Choke & Kill
+
+- Mind Tricks <br>
+<small> control over the weak-willed>
+
+Combat Strengths {#skills}
+--------------------------------------------------------------------------------
+
+- Piloting
+
+- Lightsaber Combat
+
+- Telekinesis
+
+- Levitation
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+
+Last updated on `r Sys.Date()`.
+
+
+
+Main
+================================================================================
+
+Darth Vader {#title}
+--------------------------------------------------------------------------------
+
+### Sith Lord & Emperor`s Right Hand
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### Palpatine Institute
+
+Dark Side Studies
+
+Death Star I
+
+4 - 19
+
+
+### The Jedi Academy
+
+Jedi Initiate and Youngling
+
+Corouscant
+
+28 - 33
+
+
+Work Experience {data-icon="fa-brands fa-empire"}
+--------------------------------------------------------------------------------
+
+### Senior Dark Lord of the Sith
+
+Sith Lords Union
+
+Death Star I
+
+4 - 19
+
+- Executed Order 66
+
+### Supreme Commander
+
+Galactic Empire
+
+Death Star I
+
+4 - 19
+
+- Oversaw the construction of the two big weapons - Death Star I and II.
+
+### Grand Army General
+
+Jedi Order
+
+Corouscant
+
+19 - 21
+
+- Personal representative of the Chancellor
+
+### Obi-Wan Kenobi's Padawan
+
+The Jedi Academy
+
+Corouscant
+
+21 - 28
+
+- Maintaining peace
+
+### Slave
+
+Watto`s Shop
+
+Tatooine
+
+32 - 38
+
+- Repair of technical devices and droids
+  
+
+Professional Experience {data-icon="fa-solid fa-skull"}
+--------------------------------------------------------------------------------
+
+### Slaughtering the Younglings
+
+Jedi Temple
+
+Corouscant
+
+19 BBY
+
+::: concise
+- I regret this.
+:::
+
+### Rescue Shmi Skywalker Lars
+
+N/A
+
+Tatooine
+
+22 BBY
+
+::: concise
+- I slaughtered the entire Tusken Raider tribe.
+:::
+
+
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+### Padawan
+
+Ahsoka Tano
+
+Corouscant
+
+N/A
+
+### Dark Jedi
+
+Antinnis Tremayne
+
+Death Star I
+
+N/A
+
+### Dark Jedi
+
+Halmere
+
+Death Star I
+
+N/A
+
+### Secret Sith
+
+Galen Marek
+
+Death Star II
+
+N/A
+
+
+

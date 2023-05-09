@@ -1,0 +1,91 @@
+---
+name: Darth
+surname: Vader
+position: "Sith Lord"
+pronouns: he/him
+address: "Death Star II"
+email: "darth.vader@galactic-empire.ds"
+twitter: darthvader
+linkedin: darthvader
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Some stuff about me
+
+ * I am the Chosen One.
+ * I have prosthetic arms and legs, and a life-support system.
+ * I have a problem accepting authority.
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Dark Side Studies", "19 BBY - 4 BBY", "Palpatine Institute", "Death Star I",
+  "Jedi Initiate and Youngling", "33 BBY - 28 BBY", "The Jedi Academy", "Corouscant",
+  "Jedi Master", "Quit", "The Jedi Academy", "Corouscant"
+) %>%
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Work Experience
+
+```{r}
+tribble(
+  ~Year, ~Role, ~Company, ~Tasks,
+  "38 BBY - 32 BBY", "Repair of technical devices and droids", "Slave", "Watto`s Shop", 
+  "28 BBY - 21 BBY", "Maintaining peace", "Obi-Wan Kenobi's Padawan", "The Jedi Academy", 
+  "21 BBY - 19 BBY", "Personal representative of the Chancellor", "Grand Army General", "Jedi Order", 
+  "19 BBY - 4 ABY", "Oversaw the construction of the two big weapons - Death Star I and II", "Supreme Commander", "Galactic Empire", 
+  "19 BBY - 4 ABY", "Executed Order 66", "Senior Dark Lord of the Sith", "Sith Lords Union"
+) %>%
+  detailed_entries(
+    Role,
+    Year,
+    Company,
+    Tasks
+  )
+```
+
+# Professional Experience
+
+```{r}
+tribble(
+  ~what, ~when,
+  "Rescue Shmi Skywalker Lars", "22 BBY", 
+  "Slaughtering the Younglings", "19 BBY"
+) %>%
+  brief_entries(
+    what,
+    when
+  )
+```
+
+# Selected Apprentices
+
+```{r}
+tribble(
+  ~who, ~when, ~what,
+  "Ahsoka Tano", "", "Padawan",
+  "Antinnis Tremayne", "", "Dark Jedi",
+  "Halmere", "", "Dark Jedi",
+  "Galen Marek", "", "Secret Sith",
+  "Vost Tyne", "", "Dark Jedi"
+) %>%
+  brief_entries(
+    who,
+    when,
+    what
+  )
+```
+
+
