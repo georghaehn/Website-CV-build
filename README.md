@@ -1,8 +1,8 @@
 # Website and CV build with RStudio
 
-## Date: 
+## Date
 
-Monday May 15, 2023 (9.30 am - 4.00 pm)
+Monday May 15, 2023 (9.30 am - 4.00 pm) <br>
 Tuesday May 16, 2023 (9.30 am - 4.00 pm)
 
 ## Location
@@ -35,5 +35,4 @@ The course aims to be interactive - participants will be expected to contribute 
 
 ## Lecturer
 
-Dr. Rachel Rui Ying Oh
-Georg J. A. Hähn
+Dr. Rachel Rui Ying Oh & Georg J. A. Hähn
