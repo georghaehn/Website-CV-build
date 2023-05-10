@@ -1,0 +1,432 @@
+---
+title: "Website and CV build with RStudio"
+author: "Rachel Rui Ying Oh & Georg J. A. Hähn"
+date: "2023-05-15"
+output: 
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+      titleSlideClass: ["left", "bottom", "my-title"]
+    seal: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+library(xaringanthemer)
+library(xaringanExtra)
+library(showtext)
+library(fontawesome)
+library(metathis)
+library(tidyverse)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+style_mono_accent(
+  base_color = "#1c5253",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+```
+
+```{r xaringan-extras, echo=FALSE}
+xaringanExtra::use_scribble()
+xaringanExtra::use_panelset()
+xaringanExtra::use_clipboard()
+xaringanExtra::use_share_again()
+```
+
+
+```{r metathis, echo=FALSE}
+meta() |> 
+  meta_social(
+    title = "Website and CV build with RStudio",
+    og_type = "website",
+    og_author = "Rachel Rui Ying Oh & Georg J. A. Hähn",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@GeorgHaehn",
+    twitter_site = "@GeorgHaehn"
+  )
+```
+
+class: title-slide, center, middle
+
+## `r rmarkdown::metadata$title`
+
+### `r rmarkdown::metadata$author`  
+
+`r rmarkdown::metadata$date`
+
+---
+name: about-us
+class: middle, center
+
+# About us
+
+
+<img style = "border-radius: 60%;" src = "https://pbs.twimg.com/profile_images/1584801093208481794/C0NKIf8r_400x400.jpg" width = 26%/> $\qquad$ $\qquad$
+<img style = "border-radius: 60%;" src = "https://avatars.githubusercontent.com/u/93133085?v=4" width = 26%/>
+
+### Rachel Rui Ying Oh $\quad$ $\quad$ Georg J. A. Hähn
+
+#### $\quad$ $\quad$ $\qquad$ Postdoctoral researcher $\qquad$ $\qquad$ Scientific employee of sPlot & sMon
+
+---
+class: center, middle
+
+# Let's get to know each other
+
+--
+## Please, tell us who you are and why are you interested in the course.
+
+---
+class: left
+
+# `r fontawesome::fa("laptop")` Why should I do my CV / website in R?
+
+--
+### $\quad$  
+### $\qquad$ $\qquad$ Common environment and language you already know
+--
+### $\qquad$ $\qquad$ Big community, a lot of resources and ideas
+
+--
+### $\qquad$ $\qquad$ Very easy to implement your current research
+---
+class: left
+
+# `r fontawesome::fa("burger")` Course menu
+
+--
+### $\qquad$ $\qquad$ The basics:
+$\qquad$ $\qquad$ $\qquad$ $\qquad$ $html$ <br>
+<br>
+$\qquad$ $\qquad$ $\qquad$ $\qquad$ $\LaTeX$
+
+--
+### $\qquad$ $\qquad$ What is a good CV?
+
+--
+#### $\qquad$ $\qquad$ $\qquad$ $\qquad$ A professional CV with `rmarkdown`
+
+--
+### $\qquad$ $\qquad$ How to create a personal website.
+
+---
+class: left
+
+# The basics: $html$
+
+.pull-left[
+
+ ```
+<style>
+	x {
+		background-color: lightblue;
+		font-family: Arial;
+		color: red;
+	}
+	y {
+		font-size: 48px;
+		color: white;
+		text-shadow: 2px 2px black;
+		margin: 40px;
+	}
+	z {
+		font-size: 24px;
+		line-height: 1.5;
+		margin: 100px;
+	}
+</style>
+```
+
+]
+--
+.pull-right[
+
+<style>
+	x {
+		background-color: lightblue;
+		font-family: Arial;
+		color: red;
+	}
+	y {
+		font-size: 48px;
+		color: white;
+		text-shadow: 2px 2px black;
+		margin: 40px;
+	}
+	z {
+		font-size: 24px;
+		line-height: 1.5;
+		margin: 100px;
+	}
+</style>
+
+
+``` <x> This is x </x> ```
+<x> This is x </x>
+
+<br>
+<br>
+
+``` <y> This is y </y> ```
+<y> This is y </y>
+
+<br>
+<br>
+
+``` <z> This is z </z> ```
+<z> This is z </z>
+
+]
+
+
+---
+class: left
+
+# The basics: $html$
+
+### Changing the alignment of just one part of the text
+
+.pull-left[
+
+```
+In general I write on the left side, 
+but sometimes 
+
+<center> 
+in the center 
+</center>
+
+<DIV align = right>
+or on the right.
+</DIV>
+
+Afterwards, I just continue on the left.
+
+```
+
+]
+--
+
+.pull-right[
+
+
+In general I write on the left side, but sometimes 
+
+<center> in the center </center>
+
+<DIV align = right>  or on the right. </DIV>
+
+Afterwards, I just continue on the left.
+
+]
+
+---
+class: left
+
+# The basics: $html$
+
+### How do I add a link to my webpage?
+--
+.pull-left[
+```
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="red.html">Red</a></li>
+    <li><a href="math.html">Math</a></li>
+  </ul>
+</nav>
+```
+]
+--
+.pull-right[
+
+   <nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="red.html">Red</a></li>
+			<li><a href="math.html">Math</a></li>
+		</ul>
+	</nav>
+
+]
+
+---
+class: left
+
+# The basics: $\LaTeX$
+--
+
+### Why should I care about?
+--
+
+#### High-quality typesetting, which is especially important for mathematical and scientific symbols and equations
+--
+
+#### Easy cross-referencing and citation capabilities, making it easy to reference figures, equations, tables
+--
+.pull-left[
+
+```
+This is a mathematical equation: 
+
+$$\frac{\sqrt{x}}{\alpha+\beta}=\gamma$$
+
+Using $\LaTeX$.
+```
+
+]
+--
+
+.pull-right[
+
+This is a mathematical equation: 
+$$\frac{\sqrt{x}}{\alpha+\beta}=\gamma$$
+Using $\LaTeX$.
+
+]
+
+---
+class: left
+
+# The basics: Can I combine them?
+--
+
+### Of course! `r fontawesome::fa("thumbs-up")`
+
+--
+<style>
+	h2{
+		font-family: Arial;
+		color: red;
+		text-align: center
+	}
+	text {
+		font-size: 20px;
+		line-height: 1.5;
+		color: blue;
+		margin: 330px
+	}
+</style>
+<body>
+	<h2>Welcome!</h2>
+	<text>This is a mathematical equation: 
+	$\frac{\sqrt{x}}{\alpha+\beta}=\gamma$
+	</text>
+</body>
+
+--
+.pull-left[
+```
+<style>
+	h2{
+		font-family: Arial;
+		color: red;
+		text-align: center
+	}
+	text {
+		font-size: 20px;
+		line-height: 1.5;
+		color: blue;
+		margin: 330px
+	}
+</style>
+```
+]
+--
+```
+<body>
+	<h2>Welcome!</h2>
+	<text>This is a mathematical equation: 
+	$\frac{\sqrt{x}}{\alpha+\beta}=\gamma$
+	</text>
+</body>
+```
+
+---
+class: inverse, center, middle
+
+# `r fontawesome::fa("mug-hot")`
+# Coffee break
+
+---
+class: inverse, center, middle
+
+# A professional CV with `rmarkdown`
+
+<img src = "https://media4.giphy.com/media/3o84sw9CmwYpAnRRni/giphy.gif?cid=ecf05e47ocwo5esy5sjp23ix2vo3b6ld9lwzzyip9xf0hy9f&ep=v1_gifs_search&rid=giphy.gif&ct=g" width = 90%/>
+
+---
+class: inverse, center
+
+# Meet Darth Vader
+
+<img src = "https://media4.giphy.com/media/K9yzeKyvvva9i/giphy.gif?cid=ecf05e476n8o8yz6vk0c4ebfo93rwmxksy0wx7ky7zpi1ywa&ep=v1_gifs_related&rid=giphy.gif&ct=g" width = 70%/>
+
+--
+### He is looking for a new job...
+
+---
+class: left
+
+# He started with the `vitae` R package
+
+--
+.left-column[
+<img src = "https://ropensci.org/blog/2019/01/10/vitae/PeFoXDy.png">
+]
+
+.right-column[
+### Using dataframes with his information:
+
+#### Education
+```{r}
+library(vitae)
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Dark Side Studies", "19 BBY - 4 BBY", "Palpatine Institute", "Death Star I",
+  "Jedi Initiate and Youngling", "33 BBY - 28 BBY", "The Jedi Academy", "Corouscant",
+  "Jedi Master", "Quit", "The Jedi Academy", "Corouscant"
+) %>%
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+---
+class: inverse
+
+
+
+### With `vitae` and the `awesomecv` theme 
+
+<center>
+<img src = "presentation_files/Vitae.png", width = 40%>
+</center>
+---
+class: left, inverse
+
+# Than he tried `pagedown`
+
+### This looks already pretty good or?
+
+<center>
+<img src = "presentation_files/Pagedown.png" width = 35%>
+</center>

@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>My Red Page</title>
+	<style>
+		h1 {
+			font-family: Arial, sans-serif;
+			color: #ff0000;
+			text-align: center;
+		}
+		p {
+			font-size: 1.2em;
+			line-height: 1.5;
+			margin: 20px;
+		}
+		img {
+			display: block;
+			margin: auto;
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome to my website</h1>
+	<p>This is my first HTML page.</p>
+</body>
+</html>
