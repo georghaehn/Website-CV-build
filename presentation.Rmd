@@ -33,6 +33,7 @@ library(showtext)
 library(fontawesome)
 library(metathis)
 library(tidyverse)
+library(rmarkdown)
 ```
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
@@ -92,7 +93,7 @@ class: center, middle
 # Let's get to know each other
 
 --
-## Please, tell us who you are and why are you interested in the course.
+### Please, tell us who you are and why are you interested in the course.
 
 ---
 class: left
@@ -100,13 +101,14 @@ class: left
 # `r fontawesome::fa("laptop")` Why should I do my CV / website in R?
 
 --
-### $\quad$  
-### $\qquad$ $\qquad$ Common environment and language you already know
---
-### $\qquad$ $\qquad$ Big community, a lot of resources and ideas
+### <br>
+### $\qquad$ $\qquad$ Common environment and language you already know.
 
 --
-### $\qquad$ $\qquad$ Very easy to implement your current research
+### $\qquad$ $\qquad$ Big community, a lot of resources and ideas.
+
+--
+### $\qquad$ $\qquad$ Very easy to implement your current research.
 ---
 class: left
 
@@ -122,10 +124,125 @@ $\qquad$ $\qquad$ $\qquad$ $\qquad$ $\LaTeX$
 ### $\qquad$ $\qquad$ What is a good CV?
 
 --
-#### $\qquad$ $\qquad$ $\qquad$ $\qquad$ A professional CV with `rmarkdown`
+#### $\qquad$ $\qquad$ $\qquad$ $\qquad$ A professional CV with $rmarkdown$.
 
 --
 ### $\qquad$ $\qquad$ How to create a personal website.
+
+---
+class: left
+
+# The basics: $html$
+
+.pull-left[
+
+ ```
+<p>This is a paragraph.</p>
+
+<h1>This is a level 1 heading</h1>
+<h2>This is a level 2 heading</h2>
+<h3>This is a level 3 heading</h3>
+
+<a href="https://www.example.com">Link to Example</a>
+
+<img src="image.jpg" alt="Description of the image" width = 10%>
+```
+
+]
+--
+.pull-right[
+
+<p>This is a paragraph.</p>
+
+<h1>This is a level 1 heading</h1>
+<h2>This is a level 2 heading</h2>
+<h3>This is a level 3 heading</h3>
+
+<a href="https://www.example.com">Link to Example</a>
+
+<img src="presentation_files/1.new_site.png" alt="Description of the image" width = 10%>
+
+]
+
+---
+class: left
+
+# The basics: $html$
+
+.pull-left[
+
+ ```
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+<ul>
+    <li>Item A</li>
+    <li>Item B</li>
+    <li>Item C</li>
+</ul>
+```
+
+]
+--
+.pull-right[
+
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+<ul>
+    <li>Item A</li>
+    <li>Item B</li>
+    <li>Item C</li>
+</ul>
+]
+
+---
+class: left
+
+# The basics: $html$
+
+.pull-left[
+
+ ```
+<table>
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+    </tr>
+    <tr>
+        <td>Cell 3</td>
+        <td>Cell 4</td>
+    </tr>
+</table>
+
+```
+
+]
+--
+.pull-right[
+
+<br>
+<br>
+
+<table>
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+    </tr>
+    <tr>
+        <td>Cell 3</td>
+        <td>Cell 4</td>
+    </tr>
+</table>
+
+]
+
 
 ---
 class: left
@@ -202,7 +319,7 @@ class: left
 
 # The basics: $html$
 
-### Changing the alignment of just one part of the text
+### Changing the alignment of just one part of the text.
 
 .pull-left[
 
@@ -219,12 +336,10 @@ or on the right.
 </DIV>
 
 Afterwards, I just continue on the left.
-
 ```
 
 ]
 --
-
 .pull-right[
 
 
@@ -244,8 +359,10 @@ class: left
 # The basics: $html$
 
 ### How do I add a link to my webpage?
+
 --
 .pull-left[
+
 ```
 <nav>
   <ul>
@@ -255,6 +372,7 @@ class: left
   </ul>
 </nav>
 ```
+
 ]
 --
 .pull-right[
@@ -278,26 +396,24 @@ class: left
 ### Why should I care about?
 --
 
-#### High-quality typesetting, which is especially important for mathematical and scientific symbols and equations
+### High-quality typesetting, which is especially important for mathematical and scientific symbols and equations.
 --
 
-#### Easy cross-referencing and citation capabilities, making it easy to reference figures, equations, tables
+### Easy cross-referencing and citation capabilities, making it easy to reference figures, equations, tables.
+
 --
 .pull-left[
-
 ```
-This is a mathematical equation: 
+This is a mathematical equation:
 
 $$\frac{\sqrt{x}}{\alpha+\beta}=\gamma$$
 
-Using $\LaTeX$.
+Using \$\LaTeX\$.
 ```
 
 ]
 --
-
 .pull-right[
-
 This is a mathematical equation: 
 $$\frac{\sqrt{x}}{\alpha+\beta}=\gamma$$
 Using $\LaTeX$.
@@ -335,6 +451,7 @@ class: left
 
 --
 .pull-left[
+
 ```
 <style>
 	h2{
@@ -352,15 +469,17 @@ class: left
 ```
 ]
 --
+.pull-right[
+
 ```
-<body>
+< body>
 	<h2>Welcome!</h2>
 	<text>This is a mathematical equation: 
 	$\frac{\sqrt{x}}{\alpha+\beta}=\gamma$
 	</text>
 </body>
 ```
-
+]
 ---
 class: inverse, center, middle
 
@@ -370,14 +489,14 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
-# A professional CV with `rmarkdown`
+# A professional CV with $rmarkdown$.
 
 <img src = "https://media4.giphy.com/media/3o84sw9CmwYpAnRRni/giphy.gif?cid=ecf05e47ocwo5esy5sjp23ix2vo3b6ld9lwzzyip9xf0hy9f&ep=v1_gifs_search&rid=giphy.gif&ct=g" width = 90%/>
 
 ---
 class: inverse, center
 
-# Meet Darth Vader
+# Meet Darth Vader.
 
 <img src = "https://media4.giphy.com/media/K9yzeKyvvva9i/giphy.gif?cid=ecf05e476n8o8yz6vk0c4ebfo93rwmxksy0wx7ky7zpi1ywa&ep=v1_gifs_related&rid=giphy.gif&ct=g" width = 70%/>
 
@@ -387,7 +506,7 @@ class: inverse, center
 ---
 class: left
 
-# He started with the `vitae` R package
+# He started with the $vitae$ R package
 
 --
 .left-column[
@@ -398,7 +517,7 @@ class: left
 ### Using dataframes with his information:
 
 #### Education
-```{r}
+```{r, eval = FALSE}
 library(vitae)
 library(tibble)
 tribble(
@@ -409,13 +528,11 @@ tribble(
 ) %>%
   detailed_entries(Degree, Year, Institution, Where)
 ```
-
+]
 ---
 class: inverse
 
-
-
-### With `vitae` and the `awesomecv` theme 
+### With $vitae$ and the $awesomecv$ theme.
 
 <center>
 <img src = "presentation_files/Vitae.png", width = 40%>
@@ -423,10 +540,75 @@ class: inverse
 ---
 class: left, inverse
 
-# Than he tried `pagedown`
+# Than he tried $pagedown$.
 
 ### This looks already pretty good or?
 
 <center>
 <img src = "presentation_files/Pagedown.png" width = 35%>
 </center>
+
+---
+class: middle, center
+
+# Is there a more automated way?
+
+--
+### YES! `r fontawesome::fa("thumbs-up")`
+
+--
+#### With $datadrivencv$.
+
+--
+#### Simply start a new .R file.
+
+```
+library(datadrivencv)
+
+datadrivencv::use_datadriven_cv(
+  full_name = "Darth Vader",
+  data_location = "https://docs.google.com/spreadsheets/d/1DevCfJgBiY-_LNZn_pkf3TQuUtsHv7aYNoNcRibhA1g/edit?usp=sharing",
+  pdf_location = "CV-datadriven/CV_Darth-Vader.pdf",
+  html_location = "CV-datadriven/CV_Darth-Vader.html",
+  source_location = "CV-datadriven/automate-cv-rmd/"
+)
+
+```
+
+---
+class: middle, center
+
+# So I just need to update my google sheet?
+
+--
+### https://docs.google.com/spreadsheets/d/1DevCfJgBiY-_LNZn_pkf3TQuUtsHv7aYNoNcRibhA1g/edit?usp=sharing
+
+--
+### Simply run render_cv.R.
+
+```
+# Knit the HTML version
+rmarkdown::render("cv.rmd",
+                  params = list(pdf_mode = FALSE),
+                  output_file = "cv.html")
+
+# Knit the PDF version to temporary html location
+tmp_html_cv_loc <- fs::file_temp(ext = ".html")
+rmarkdown::render("cv.rmd",
+                  params = list(pdf_mode = TRUE),
+                  output_file = tmp_html_cv_loc)
+
+# Convert to PDF using Pagedown
+pagedown::chrome_print(input = tmp_html_cv_loc,
+                       output = "cv.pdf")
+```
+
+---
+class: left, inverse
+
+# Voilla! 
+
+<center>
+<img src = "presentation_files/Datadriven.png" width = 35%>
+</center>
+
