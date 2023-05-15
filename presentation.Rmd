@@ -612,3 +612,74 @@ class: left, inverse
 <img src = "presentation_files/Datadriven.png" width = 35%>
 </center>
 
+---
+class: left, inverse
+
+# Let`s start a simple website!
+
+--
+### Create a new project.
+
+<center>
+<img src = "presentation_files/B_directory.png" width = 50%>
+</center>
+
+---
+class: left, inverse
+
+# Let`s start a simple website! 
+--
+### Choose the project type.
+
+<center>
+<img src = "presentation_files/C_project-type.png" width = 60%>
+</center>
+
+<br>
+
+---
+class: left, inverse
+
+# Let`s start a simple website! 
+
+### Choose the directory.
+
+<center>
+<img src = "presentation_files/D_directory.png" width = 60%>
+</center>
+
+---
+class: left, inverse
+
+# Let`s start with HUGO! 
+
+--
+### Start a new site
+
+<center>
+<img src = "presentation_files/1.new_site.png" width = 60%>
+</center>
+
+---
+class: left, inverse
+
+# Let`s start with HUGO! 
+
+--
+### $\quad$
+
+<center>
+<img src = "presentation_files/2.created_site.png" width = 60%>
+</center>
+
+---
+class: left, inverse
+
+# Let`s start with HUGO! 
+
+--
+### $\quad$
+
+<center>
+<img src = "presentation_files/3.serve_site.png" width = 60%>
+</center>
