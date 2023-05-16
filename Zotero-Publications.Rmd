@@ -1,0 +1,74 @@
+---
+title: "Zotero-citations"
+author: "Rachel Rui Ying Oh & Georg J. A. Hähn"
+date: "2023-05-16"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+remotes::install_github(repo = "giocomai/zoteror")
+
+library(zoteror)
+library(tidyverse)
+library(RefManageR)
+
+#set zotero credentials
+
+zot_set_options(user = yourusernum, credentials = "yourAPIkey")
+
+
+#pull from zotero and create a table
+table <-
+  jsonlite::fromJSON(
+    #see https://www.zotero.org/support/dev/web_api/v3/basics
+    txt =  paste0("https://api.zotero.org/users/yourusernum/collections/collectionname/items/?key=APIkey&limit=100")
+  )$data |>
+  mutate(Authors = paste(sapply(creators,'[[',3) |> sapply("[", 1), "et al.")) |> #get first author
+  dplyr::select(-c(creators, tags, collections, relations)) |>
+  as.data.frame() |>
+  select(Authors, Year = date, Title = title, DOI, URL = url) |>
+  mutate(DOI = str_remove_all(DOI, 'DOI:')) |>
+  mutate(Year = str_sub(Year, start = str_length(Year)-3, end = str_length(Year))) |> #extract only year if month is inside as well
+  mutate(Title = str_to_title(Title)) |>
+  mutate(DOI = paste0("<a href='", URL, "'>", DOI,"</a>")) |>
+  arrange(Authors, Year)
+
+#if you have more than 100 publications
+for(i in (1:10)*100){
+  if(nrow(table)==i){
+    table <-
+      bind_rows(
+        data.save,
+        jsonlite::fromJSON(
+          txt =  paste0("addthelinkfromabove&limit=100$start=",i)
+        )$data |> 
+          mutate(Authors = paste(sapply(creators,'[[',3) |> sapply("[", 1), "et al.")) |> #get first author
+          dplyr::select(-c(creators, tags, collections, relations)) |> 
+          as.data.frame() |> 
+          select(Authors, Year = date, Title = title, DOI, URL = url) |> 
+          mutate(DOI = str_remove_all(DOI, 'DOI:')) |> 
+          mutate(Year = str_sub(Year, start = str_length(Year)-3, end = str_length(Year))) |> #extract only year if month is inside as well
+          mutate(Title = str_to_title(Title)) |>
+          mutate(DOI = paste0("<a href='", URL, "'>", DOI,"</a>")) |> 
+          arrange(Authors, Year) |> 
+          dplyr::select(-URL))
+  }}
+
+bib <- ReadZotero(
+  user = "yourusernum",
+  .params = list(key = "yourapikey",
+                 collection = "thecollectionname"), 
+  delete.file = T)
+
+WriteBib(bib, "publications")
+
+library(vitae)
+
+bibliography_entries("publications.bib", "Publications")
+
+```
+
